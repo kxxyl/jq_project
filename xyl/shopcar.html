@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="public.css" />
+		<link rel="stylesheet" type="text/css" href="icofont/iconfont.css" />
+		<script src="jquery-1.11.1.min.js"></script>
+		<script src="cookie.js"></script>
+		<link rel="stylesheet" type="text/css" href="shopcar.css" />
+	</head>
+	<body>
+		<!--login-->
+	<div class="login one">
+		<div class="layout">
+			<ul class="login_left">
+				<li><img src="imgs/login_left1.jpg"/></li>
+				<li><a href="http://www.hs-outlets.com/">华盛Outlets</a></li>
+				<li><img src="imgs/login_left2.jpg"/></li>
+			</ul>
+			<ul class="login_right">
+				<li><a href="login.html">登录</a></li>
+				<li><a href="register.html">免费注册</a></li>
+				<li><a href="#">我的奥莱</a>
+					<ul id="myaolai">
+						<li><a href="#">我的订单</a></li>
+						<li><a href="#">我的收藏</a></li>
+						<li><a href="#">购物车</a></li>
+					</ul>
+				</li>
+				<li><a href="#">帮助中心</a></li>
+				<li><a href="#">关注</a>
+					<img src="imgs/wexin.png" id="weixin"/>
+				</li>
+				<li><a href="#">收藏</a></li>
+			</ul>
+			
+		</div>
+	</div>
+	<!--login-->
+	
+	<!--layout-->
+	<div class="layout two">
+		<img src="imgs/ad.gif" class="ad"/>
+		<div class="search">
+			<img src="imgs/logo.png" />
+			<img src="imgs/shopcarlogo.jpg" style="width:200px;"/>
+			<!--搜索框-->
+			<div class="search_box">
+				<form name="search" method="get" >
+					<input type="text" placeholder="VICTOR" class="txt"/>
+					<div class="btn">搜索</div>
+				</form>
+				<p>热门搜索:</p>
+			</div>
+			<div class="code">
+				<img src="imgs/code.jpg" />
+				<div>
+					手机端专享
+					<p>随时随地</p>
+					<p>想购就购</p>
+				</div>
+				<img src="imgs/close.png" class="close"/>
+			</div>
+			<div class="buycar">
+				<i class="iconfont">&#xe502;</i>
+				<span>></span>
+				<span>购物车</span>
+				<div class="count">0</div>
+				<div class="hidecount">
+					<div>
+						<div>查看购物车</div>
+						<p>共<span>3</span>件商品</p>
+						<p>共计<span>Y396.00</span></p>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--layout-->
+	
+	<!--main-->
+	<div class="layout shopcar_main">
+		<img src="imgs/shopcarad.jpg" />
+		<table cellspacing="0">
+			<thead>
+				<tr>
+					<td>全选</td>
+					<td colspan="2">订单商品</td>
+					<td>单价</td>
+					<td>数量</td>
+					<td>小计</td>
+					<td>操作</td>
+				</tr>
+			</thead>
+			<tbody>
+				<!--<tr>
+					<td><input type="checkbox"/></td>
+					<td><img src="goodlistimg/1-1-1.jpg"/></td>
+					<td>牛皮斜挎包单肩包308364</td>
+					<td>¥6990.00</td>
+					<td><input type="button" value="-"/><span>1</span><input type="button" value="+"/></td>
+					<td>¥6990.00</td>
+					<td><a href="javascript:;">删除</a></td>
+				</tr>-->
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>全选<input type="checkbox" id="qx"/></td>
+					<td colspan="2"><a href="javascript:;">删除已选中的商品</a></td>
+					<td>共<span>0</span>件商品</td>
+					<td>共计¥<span>0</span></td>
+					<td colspan="2"><input type="button" value="去结算" id="buybtn"/></td>
+				</tr>
+			</tfoot>
+		</table>
+		
+	</div>
+	
+	
+	<!--main-->
+	<!--botton-->
+	<div class="bottom four">
+		<div class="layout">
+			<div class="bottom_left">
+				<ul>
+					<h2>购物指南</h2>
+					<li><a href="#">购物流程</a></li>
+					<li><a href="#">用户注册</a></li>
+					<li><a href="#">提交订单</a></li>
+					<li><a href="#">找回密码</a></li>
+					<li><a href="#">常见问题</a></li>
+				</ul>
+				<ul>
+					<h2>支付方式</h2>
+					<li><a href="#">网银支付</a></li>
+					<li><a href="#">第三方支付</a></li>
+					<li><a href="#">支付常见问题</a></li>
+				</ul>
+				<ul>
+					<h2>配送方式</h2>
+					<li><a href="#">配送服务查询</a></li>
+					<li><a href="#">配送服务说明</a></li>
+					<li><a href="#">验货与签收</a></li>
+				</ul>
+				<ul>
+					<h2>售后服务</h2>
+					<li><a href="#">退换货政策</a></li>
+					<li><a href="#">退换货管理</a></li>
+					<li><a href="#">退换货说明</a></li>
+					<li><a href="#">退换货流程</a></li>
+				</ul>
+			</div>
+			<div class="bottom_right">
+				<h2>客服中心</h2>
+				<p>400-184-8866</p>
+				<p>周一至周日：09:00-21:00</p>
+				<p>客服邮箱：<a href="#">aolaigo@csc-sz.com</a></p>
+			</div>
+		</div>
+	</div>
+	<!--bottom-->
+	
+	<!--footer-->
+	<div class="footer five">
+		<p>
+			<a href="#">关于奥莱购</a>&nbsp;丨
+			<a href="#">联系我们</a>&nbsp;丨
+			<a href="#">诚聘英才</a>&nbsp;丨
+			<a href="#">商务合作</a>&nbsp;丨
+			<a href="#">友情链接</a>&nbsp;丨
+			<a href="#">华南城网</a>
+		</p>
+		
+		<p>
+			Copyright © 2013-2015 深圳华盛电子商务有限公司 粤ICP备14007326号-1 All Right&nbsp;|
+			<a href="#">华盛奥特莱斯官方网上商城</a>&nbsp;|
+			<a href="#">华盛Outlets</a>
+		</p>
+		
+		<p>
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+		</p>
+	</div>
+	<!--footer-->	
+
+	</body>
+</html>
+<script src="public.js"></script>
+<script>
+	
+	var arr = getCookie("good");
+	var html = "";
+	for (var i in arr ){
+		var str = `<tr>
+					<td><input type="checkbox" class="dx"/></td>
+					<td><img src="goodlistimg/${arr[i].img}.jpg"/></td>
+					<td>${arr[i].say}</td>
+					<td>¥${arr[i].price1}</td>
+					<td class="as"><input type="button" value="-"/><span data-id=${arr[i].id}>${arr[i].count}</span><input type="button" value="+"/></td>
+					<td>¥${arr[i].total}</td>
+					<td><a href="javascript:;">删除</a></td>
+				</tr>`
+		html+=str;
+	}
+	$("tbody").html(html);
+	$(".as").find("input").click(function(){
+		switch($(this).val()){
+			case "-":{
+				var percount = parseInt($(this).parent().find("span").html());
+				$(this).parent().find("span").html(Math.max(1,percount-1));
+				break;
+			};
+			case "+":{
+				var percount = parseInt($(this).parent().find("span").html());
+				$(this).parent().find("span").html(Math.max(1,percount+1));
+			}
+		}
+		
+		for (var j in arr){
+			if (arr[j].id==$(this).parent().find("span").data("id")){
+				arr[j].count = $(this).parent().find("span").html();
+				arr[j].total = parseInt(arr[j].count) * parseInt(arr[j].price1);
+				$(this).parent().next().html("¥"+arr[j].total);
+				break;
+			}
+		}
+		setCookie("good",JSON.stringify(arr),1);
+		car()
+		jiesuan();
+		
+	})
+	
+	//删除商品
+	$(".as").next().next().find("a").click(function(){
+		$(this).parent().parent().remove();
+		for (var j in arr){
+			if (arr[j].id==$(this).parent().prev().prev().find("span").data("id")){
+				arr.splice(j,1);
+				break;
+			}
+		}
+		setCookie("good",JSON.stringify(arr),1);
+		car()
+	})
+	
+	//全选框
+	$("#qx").click(function(){
+		$(".dx").prop("checked",$("#qx").prop("checked"));
+		jiesuan();
+	})
+	
+	$(".dx").click(function(){
+		jiesuan();
+	})
+	
+	function jiesuan (){
+		var countcar = 0;
+		var totalcar = 0;
+		$(".dx:checked").each(function(index,ele){
+			for (var j in arr){
+				if (arr[j].id==$(ele).parent().parent().find("span").data("id")){
+					countcar+=parseInt(arr[j].count);
+					totalcar+=parseInt(arr[j].total);
+					
+				}
+			}
+		})
+		$("tfoot tr td").eq(2).find("span").html(countcar);
+		$("tfoot tr td").eq(3).find("span").html(totalcar);
+	}
+	
+	//删除已选中
+	$("tfoot tr td").eq(1).find("a").click(function(){
+		$(".dx:checked").each(function(index,ele){
+			($(ele).parent().parent())[0].remove();
+			for (var j in arr){
+				if (arr[j].id==$(ele).parent().next().next().next().next().find("span").data("id")){
+					arr.splice(j,1);
+				}
+			}
+			setCookie("good",JSON.stringify(arr),1);
+			car();
+			jiesuan();
+		})
+	})
+	
+	//去结算
+	$("buybtn").click(function(){
+		location.href="buybuybuy.html";
+	})
+</script>

@@ -1,0 +1,13 @@
+.shopcar_main {}
+	.shopcar_main table {width:1000px; margin: 40px auto;}
+		.shopcar_main table tr {min-height: 100px; font-size: 16px; text-align: center;}
+		.shopcar_main table thead {text-align: center; border: 1px solid #999; background: #eeeeef; font-size: 18px; height: 50px; line-height: 50px; font-weight: bold;}
+			.shopcar_main table thead td:nth-child(2) {width: 300px;}
+		.shopcar_main table tfoot {text-align: center; background: #eeeeef; font-size: 18px; height: 50px; line-height: 50px; font-weight: bold;}
+			.shopcar_main table tfoot td:nth-child(2) {text-align: left; border: none;}
+		.shopcar_main table tbody {height: 300px;}
+		.shopcar_main table tbody tr td {padding: 20px 0;}
+		        #buybtn {width:100px; height: 40px; background: #f66666; color: #fff; border: none; cursor: pointer;}
+		
+		
+			

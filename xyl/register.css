@@ -1,0 +1,32 @@
+.registertop {height:100px; background: url("imgs/regislogo.png") left center no-repeat;}
+	.registertop ul {width: 711px; float: right;}
+		.registertop ul li {width: 237px; height: 100px; float: left; overflow: hidden;}
+			.registertop ul li span{ background: url("imgs/registtop.png") no-repeat; float:left; height:100px; width:85px; background-position-y:-82px;}
+			.registertop ul li:nth-child(1) span {background-position-x:-268px;}
+			.registertop ul li:nth-child(2) span {background-position-x:-451px;}
+			.registertop ul li:nth-child(3) span {background-position-x:-540px;}
+			.registertop ul li p:nth-child(2) {margin-top: 30px; font-size: 20px; color: #d61518; font-weight: bold; margin-bottom: 10px;}
+
+
+.regist_main { margin-top:20px;}
+	.regist_main form {float: right; border: 1px solid #eee; width: 350px; overflow: hidden;}
+		.regist_main form p {height: 50px; width: 300px; line-height: 50px; padding: 0 25px;}
+		.regist_main form .headp {background: #f5f5f5; overflow: hidden; padding: 0 15px; width: 320px;}
+			.regist_main form .headp a:nth-child(1){float: left; color: #666;}
+			.regist_main form .headp a:nth-child(2){float: right; color: #ff7800;}
+			
+			.regist_main form p span.formleft {float: left; width: 60px;}
+			.regist_main form p input {width:130px; height:30px; background: #fcfcfc; border: 1px solid #eee; border-radius: 5px; padding-left: 10px;}
+			.regist_main form p.formcontent1 input {width: 200px; background: url("imgs/registform1.png") right center no-repeat #fcfcfc;}
+			.regist_main form p.formcontent2 input,.regist_main form p.formcontent3 input {width: 200px; background: url("imgs/registform2.png") right center no-repeat #fcfcfc;}
+			.regist_main form p.formcontent5 input:nth-child(3) {background: #eaeaea; color: #666; width: 90px;}
+				#btny {outline: none;}
+				.formcontent4 b {font-size: 16px;}
+			.regist_main form p.formcontent6 input {margin: 0 0 0 20px; width: 266px; height: 40px; background: #c81417; color: #fff; font-weight: bold;} 
+		.regist_main form p.formcontent7 {text-align: end;}
+			.regist_main form p.formcontent7 input {width:12px; height: 12px;}
+		
+		.regist_main form .point {height:18px; display: block; padding: 0 0 0 80px;}
+
+
+

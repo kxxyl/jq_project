@@ -1,0 +1,71 @@
+
+/*banner*/
+.banner{width:1200px; height:360px; position:relative;}
+	.banner img {position:absolute; left:0; top:0; opacity:0;}
+	.banner ul {position:absolute; height:25px; overflow:hidden; width:200px; margin:0 auto; left:500px; top:300px;
+				z-index:9;}
+		.banner ul li {float:left; width:25px; height:25px; border-radius:50%; background:#888888; margin-left:25px;}
+		.banner ul li.red {background:#f00;}
+		
+
+/*main*/
+	.main_top {height:1100px; margin-top:25px;}
+		.main_top_left {float:left; width:905px; height:1100px; margin-right:15px;}
+			.main_top_left section {position:relative;}
+			.main_top_left section:nth-child(1) {height:365px;}
+			.main_top_left section .main_time {width:34px; height:40px; background:url("imgs/ico-2.png"); position:absolute;
+												top:-20px; left:-20px;}
+				.main_top_left section h2 {overflow:hidden; line-height:30px;}
+					.main_top_left section h2>span {color:rgb(100,100,100);}
+					.main_top_left section h2>span>span {color:#e53b3e;}
+					.main_top_left section h2 a {float:left; font-size:20px; border-bottom:2px solid #e53b3e;
+					color:#000;}
+				.main_top_left section img {float:left; margin:18px 9px 9px 0; border:1px solid #fff;}
+		.main_top_right {overflow:hidden; margin-left:20px;}
+			.main_top_right section {margin-top:10px; padding:40px 13px 0;}
+			.main_top_right section:nth-child(2) {width:260px; height:266px; background:url("imgs/ico-2.png") -7px -147px;}
+			.main_top_right section:nth-child(3) {width:260px; height:160px; background:url("imgs/ico-2.png") -300px -4px;}
+			.main_top_right section:nth-child(4) {width:260px; height:180px; background:url("imgs/ico-2.png") -295px -220px;}
+				.main_top_right section a {display:block; border-bottom:1px dashed #eee; height:50px; line-height:50px;
+											font-size:14px; color:#666;}
+					.main_top_right section a div {width:38px; height:38px; float:left; margin:7px 15px 0 0;}
+					.main_top_right section:nth-child(2) a:nth-child(1) div {background:url("imgs/ico-2.png") -65px -7px;}
+					.main_top_right section:nth-child(2) a:nth-child(2) div {background:url("imgs/ico-2.png") -110px -7px;}
+					.main_top_right section:nth-child(2) a:nth-child(3) div {background:url("imgs/ico-2.png") -152px -7px;}
+					.main_top_right section:nth-child(2) a:nth-child(4) div {background:url("imgs/ico-2.png") -192px -7px;}
+					.main_top_right section:nth-child(2) a:nth-child(5) div {background:url("imgs/ico-2.png") -7px -54px;}
+					
+					.main_top_right section:nth-child(3) ul {border-bottom:1px dashed #eee; height:72px; line-height:72px;
+											font-size:14px; color:#666;}
+						.main_top_right section:nth-child(3) ul li {float:left;}
+						.main_top_right section:nth-child(3) ul li:nth-child(1) {width:38px; height:38px;margin:15px 15px 0 0;}
+						.main_top_right section:nth-child(3) ul li:nth-child(2) {width:115px; height:38px; margin-top:10px}
+							.main_top_right section:nth-child(3) ul li:nth-child(2) a {color:#000; font-weight:bold; border:none;}
+						.main_top_right section:nth-child(3) ul:nth-child(1) li:nth-child(1) {background:url("imgs/ico-2.png") -130px -60px;}
+						.main_top_right section:nth-child(3) ul:nth-child(2) li:nth-child(1) {background:url("imgs/ico-2.png") -184px -60px;}
+						.main_top_right section:nth-child(4) {overflow:hidden;}
+						.main_top_right section:nth-child(4) div {width:96px; height:32px; margin:114px 0 0 78px; cursor:pointer;} 			
+	
+	
+		.main_center div {overflow:hidden;}
+			.main_center div img {float:left; margin:10px 15px 10px 0;}	
+			.main_center div img:nth-child(3n) {margin-right:0;}
+	
+				
+		.main_bottom img:nth-child(1) {margin:40px 0 0 ;}		
+				
+	.floor {width:60px; height:310px; position:absolute; right:0; top:0; display:none;}	
+		.floor li {width:60px; height:22px; padding-top:40px; text-align:center; color:#666;}
+		.floor li:nth-child(1) {background:url("imgs/icon.jpg") 0 0;}
+		.floor li:nth-child(2) {background:url("imgs/icon.jpg") 0 -62px;}
+		.floor li:nth-child(3) {background:url("imgs/icon.jpg") 0 -124px;}
+		.floor li:nth-child(4) {background:url("imgs/icon.jpg") 0 -187px;}
+		.floor li:nth-child(5) {background:url("imgs/icon.jpg") 0 -250px;}
+				
+		.floor .red {color:#e53b3e}	
+		.floor .white {color:#fff}
+				
+				
+				
+				
+				

@@ -1,0 +1,43 @@
+.rightnav {height:400px; width:50px; position: fixed; top:100px; right: -7px;}
+	.rightnav li {width: 50px; height: 50px; position: relative; margin-top: 5px; text-align: center; line-height: 50px; background: #fff;}
+		.rightnav li .iconfont {font-size: 25px; color: #999; display: block;width: 50px; height: 50px; border: 1px solid #eee; border-radius: 7px; margin-top: 5px; z-index: 10; text-align: center; line-height: 50px; background: #fff;
+								margin: 0;} 
+	
+		.rightnav li span {display: block; width:100px; height: 50px; left: 0; top:0; text-align: center; line-height: 50px; font-size: 16px; position: absolute; z-index: -1; border: 1px solid #eee; border-radius: 7px; background: #fff;} 
+		
+
+
+.list_main {overflow: hidden; margin-top: 20px;}
+	.list_main img {cursor: pointer;}
+		#allcount,#nowpage {color: #fa7453;}
+	.list_main_top {height: 45px; background: #f9f9f7; border: 1px solid #eee; font-size: 20px; line-height: 45px; padding: 0 20px; overflow: hidden;}
+		.list_main_top ul {width:300px; overflow: hidden; float: right; margin-top: 6px;}
+			.pre,.next {cursor: pointer;}
+			.list_main_top ul li {float: left; border: 1px solid #eee; width: 75px; height: 30px; text-align: center; line-height: 30px; overflow: hidden;} 
+			.list_main_top ul li:nth-child(2){border: none;}
+				.list_main_top ul li:nth-child(1) i {float: left; width: 5px; height: 9px; background: url("goodlistimg/arrow.png");margin: 10px 0 0 5px;}
+				.list_main_top ul li:last-child i {float: right; width: 5px; height: 9px; background: url("goodlistimg/arrow.png");margin: 10px 5px 0 0;}
+
+	.list_main_center {overflow: hidden; padding: 0 90px;}
+		.list_main_center dl {float: left; width: 230px; height: 393px; border: 1px solid #fff; border-bottom: 1px dashed #eee; padding: 10px; position: relative; overflow: hidden;}
+		.list_main_center dl:hover {box-shadow:2px 2px 15px #888888;}
+			.list_main_center dl dt {margin-bottom: 20px;}
+				.list_main_center dl dt span {width: 62px; height: 62px; background: url("goodlistimg/sh-icon.png") -257px 0; position: absolute; right: 0; top: 0;}
+				.list_main_center dl dt ul {overflow: hidden;}
+					.list_main_center dl dt ul li {float: left; border: 1px solid #eee; margin: 10px;}
+					.list_main_center dl dt ul li:hover {border: 1px solid red;}
+		
+				.list_main_center dl dd span:nth-child(1){font-size: 18px; color: #e43b3b; font-weight: bold;}
+				.list_main_center dl dd span:nth-child(2){font-size: 14px; color: #999999; text-decoration: line-through;}
+				.list_main_center dl dd a {display: block; color: #999; margin-top: 10px;}
+				.list_main_center dl dd a:hover {color: #e43b3b; text-decoration: underline;}
+
+
+
+
+
+
+
+
+
+

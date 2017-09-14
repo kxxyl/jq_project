@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="public.css" />
+		<link rel="stylesheet" type="text/css" href="icofont/iconfont.css" />
+		<script src="jquery-1.11.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="register.css" />
+		<script src="cookie.js"></script>
+	</head>
+	<body>
+	<!--top-->
+	<div class="layout registertop">
+		<ul>
+			<li>
+				<span></span>
+				<p>100%</p>
+				<p>全场正品保证</p>
+			</li>
+			<li>
+				<span></span>
+				<p>SALE</p>
+				<p>每天低价特卖</p>
+			</li>
+			<li>
+				<span></span>
+				<p>7Days</p>
+				<p>七天无理由换货</p>
+			</li>
+		</ul>
+	</div>	
+		
+	<!--top-->	
+		
+	<!--main-->
+	<div class="layout regist_main">
+		<form action="regist_success.html" onsubmit="return ok()">
+			<p class="headp">
+				<a href="#">注册华盛奥莱会员</a><a href="#">已有账户，登录</a>
+			</p>
+			<p class="formcontent1">
+				<span class="formleft">注册帐号</span>
+				<input type="text" placeholder="请输入手机号码"/>
+			</p>
+			<span class="point"></span>
+			<p class="formcontent2">
+				<span class="formleft">输入密码</span>
+				<input type="password" placeholder="请输入密码"/>
+			</p>
+			<span class="point"></span>
+			<p class="formcontent3">
+				<span class="formleft">确认密码</span> 
+				<input type="password" placeholder="请输入密码"/>
+			</p>
+			<span class="point"></span>
+			<p class="formcontent4">
+				<span class="formleft">验证码</span> 
+				<input type="text" placeholder="请输入验证码"/>
+				<b></b>
+			</p>
+			<span class="point"></span>
+			<p class="formcontent5">
+				<span class="formleft">短信验证</span>
+				<input type="text" placeholder="请输入验证码"/>
+				<input type="button" value="获取验证码" id="btny"/>
+			</p>
+			<span class="point"></span>
+			<p class="formcontent6">
+				<input type="submit" value="注册"/>
+			</p>
+			<p class="formcontent7">
+				<input type="checkbox" checked="checked"/>
+				《奥莱购会员协议》
+			</p>
+		</form>
+		
+		<img src="imgs/regis.jpg" />
+		
+	</div>
+	<!--main-->
+	
+	
+		
+	<!--botton-->
+	<div class="bottom four">
+		<div class="layout">
+			<div class="bottom_left">
+				<ul>
+					<h2>购物指南</h2>
+					<li><a href="#">购物流程</a></li>
+					<li><a href="#">用户注册</a></li>
+					<li><a href="#">提交订单</a></li>
+					<li><a href="#">找回密码</a></li>
+					<li><a href="#">常见问题</a></li>
+				</ul>
+				<ul>
+					<h2>支付方式</h2>
+					<li><a href="#">网银支付</a></li>
+					<li><a href="#">第三方支付</a></li>
+					<li><a href="#">支付常见问题</a></li>
+				</ul>
+				<ul>
+					<h2>配送方式</h2>
+					<li><a href="#">配送服务查询</a></li>
+					<li><a href="#">配送服务说明</a></li>
+					<li><a href="#">验货与签收</a></li>
+				</ul>
+				<ul>
+					<h2>售后服务</h2>
+					<li><a href="#">退换货政策</a></li>
+					<li><a href="#">退换货管理</a></li>
+					<li><a href="#">退换货说明</a></li>
+					<li><a href="#">退换货流程</a></li>
+				</ul>
+			</div>
+			<div class="bottom_right">
+				<h2>客服中心</h2>
+				<p>400-184-8866</p>
+				<p>周一至周日：09:00-21:00</p>
+				<p>客服邮箱：<a href="#">aolaigo@csc-sz.com</a></p>
+			</div>
+		</div>
+	</div>
+	<!--bottom-->
+	
+	<!--footer-->
+	<div class="footer five">
+		<p>
+			<a href="#">关于奥莱购</a>&nbsp;丨
+			<a href="#">联系我们</a>&nbsp;丨
+			<a href="#">诚聘英才</a>&nbsp;丨
+			<a href="#">商务合作</a>&nbsp;丨
+			<a href="#">友情链接</a>&nbsp;丨
+			<a href="#">华南城网</a>
+		</p>
+		
+		<p>
+			Copyright © 2013-2015 深圳华盛电子商务有限公司 粤ICP备14007326号-1 All Right&nbsp;|
+			<a href="#">华盛奥特莱斯官方网上商城</a>&nbsp;|
+			<a href="#">华盛Outlets</a>
+		</p>
+		
+		<p>
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+		</p>
+	</div>
+	<!--footer-->	
+	
+	
+	</body>
+</html>
+<script src="cookie.js"></script>
+<script>
+	//随机验证码
+	function rand (){
+		var arr = [];//存放抽中的字符
+	        for( var i = 0; i < 4 ; i++ ){
+	            var code = parseInt(Math.random()*75+48);//rand(48,122);
+	            if( code >= 58 && code <= 64   ||  code >= 91 && code <= 96 ){
+	                 i--;//重抽
+	            }else{
+	                 arr[i] = String.fromCharCode(code);
+	            }
+	        }
+		return arr.join("");
+	}
+	$(".formcontent4 b").html(rand());
+	$(".formcontent4 b").click(function(){
+		$(".formcontent4 b").html(rand());
+	})
+    
+
+	
+	//表单验证
+	//验证手机号
+	var flagtel = null;
+	$(".formcontent1 input").focus(function(){
+		$(".point").eq(0).html("请输入注册的手机号");
+		$(".point").eq(0).css("color","#000");
+	})
+	$(".formcontent1 input").blur(function(){
+		var tel = $(".formcontent1 input").val();
+		var telreg = /^[^0][\d]{10}$/;
+		if( !telreg.test(tel) ){
+			$(".point").eq(0).html("请输入正确的手机号");
+			$(".point").eq(0).css("color","red");
+			flagtel = false;
+			return
+		}else{
+			$(".point").eq(0).html("");
+			flagtel = true;
+		}
+	})
+	
+	//验证密码
+	var flagpsw = null;
+	$(".formcontent2 input").focus(function(){
+		$(".point").eq(1).html("6-20位字符，可使用字母数字和下划线的组合");
+		$(".point").eq(1).css("color","#000");
+	})
+	$(".formcontent2 input").blur(function(){
+		var psw = $(".formcontent2 input").val();
+		var pswreg = /^[\w]{6,20}$/;
+		if( !pswreg.test(psw) ){
+			$(".point").eq(1).html("6-20位字符，可使用字母数字和下划线的组合");
+			$(".point").eq(1).css("color","red");
+			flagpsw = false;
+			return;
+		}else{
+			$(".point").eq(1).html("");
+			flagpsw = true;
+		}
+	})
+	
+	//验证确认密码
+	var rflagpsw = null;
+	$(".formcontent3 input").focus(function(){
+		$(".point").eq(2).html("请再次输入密码");
+		$(".point").eq(2).css("color","#000");
+	})
+	$(".formcontent3 input").blur(function(){
+		var rpsw = $(".formcontent3 input").val();
+		var psw = $(".formcontent2 input").val();
+		if(rpsw!=psw){
+			$(".point").eq(2).html("两次密码输入不一致");
+			$(".point").eq(2).css("color","red");
+			rflagpsw = false;
+			return;
+		}else{
+			$(".point").eq(2).html("");
+			rflagpsw = true;
+		}
+		
+	})
+	
+	//验证验证码
+	var falgcode = null;
+	$(".formcontent4 input").focus(function(){
+		$(".point").eq(3).html("请输入验证码");
+		$(".point").eq(3).css("color","#000");
+	})
+	$(".formcontent4 input").blur(function(){
+		var rcode = $(".formcontent4 b").html().toLowerCase();
+		var code = $(".formcontent4 input").val().toLowerCase();
+		if(rcode!=code){
+			$(".point").eq(3).html("验证码不正确");
+			$(".point").eq(3).css("color","red");
+			falgcode = false;
+			return;
+		}else{
+			$(".point").eq(3).html("");
+			falgcode = true;
+		}
+	})
+	
+	//获取验证码
+	var btnflag = true;
+	$("#btny").click(function(){
+		if (btnflag){
+			btnflag = false;
+			$("#btny").val("还剩60s");
+			time = 60;
+			var timer = setInterval(function(){
+				time--;
+				$("#btny").val("还剩"+time+"s");
+				if(time==0){
+					$("#btny").val("获取验证码");
+					clearInterval(timer);
+					btnflag = true;
+				}
+			},1000)
+		}
+	})
+	
+	
+	//
+	function ok (){
+		if(flagtel&&flagpsw&&rflagpsw&&falgcode&&$(".formcontent7 input").prop("checked")){
+			return true;
+		}
+		return false;
+	}
+	//注册成功，存入cookie
+	$(".formcontent6 input").click(function(){
+		if (ok()){
+			setCookie("loginflag",true);
+			setCookie("uname",$(".formcontent1 input").val(),1);
+			setCookie("upwd",$(".formcontent3 input").val(),1);
+			setCookie("count","0",1);
+			setCookie("total","0",1);
+		}
+	})
+	
+</script>
